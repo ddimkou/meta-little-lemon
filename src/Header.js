@@ -1,22 +1,27 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import Logo from "./assets/images/Logo .svg";
+
 const Header = () => {
   return (
     <header>
-      <img src={Logo} alt="Little Lemon logo" />
+      <Link to="/">
+        <img src={Logo} alt="Little Lemon logo" />
+      </Link>
       <nav>
         <ul>
+          {/* Use Link components for navigation */}
           <li>
-            <a href="/">Main</a>
+            <Link to="/">Main</Link>
           </li>
           <li>
-            <a href="/">Menu</a>
+            <Link to="/menu">Menu</Link>
           </li>
           <li>
-            <a href="/">Book a Table</a>
+            <Link to="/reserve">Book a Table</Link>
           </li>
           <li>
-            <a href="/">About</a>
+            <Link to="/about">About</Link>
           </li>
         </ul>
       </nav>

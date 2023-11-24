@@ -80,6 +80,10 @@ nav a:hover {
   color: #f4ce14;
 }
 
+/* Main */
+main {
+  min-height: 70vh;
+}
 /* Footer */
 
 footer {

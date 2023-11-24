@@ -1,15 +1,23 @@
+import React from "react";
 import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Home";
+import Reserve from "./Reserve";
 import Footer from "./Footer";
 import Header from "./Header";
-import Main from "./Main";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Main />
-      <Footer />
-    </>
+    <Router>
+      <>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/reserve" element={<Reserve />} />
+        </Routes>
+        <Footer />
+      </>
+    </Router>
   );
 }
 
