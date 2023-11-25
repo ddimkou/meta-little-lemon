@@ -2,14 +2,15 @@ import React from "react";
 import Hero from "./Hero";
 import Specials from "./Specials";
 import Reviews from "./Reviews";
+import "./Home.css";
 
 const Home = () => {
   return (
     <main>
-      <section>
+      <section className="hero">
         <Hero />
       </section>
-      <section>
+      <section className="specials">
         <Specials />
       </section>
       <section>
