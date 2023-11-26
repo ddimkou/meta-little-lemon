@@ -169,13 +169,15 @@
 
 .about-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 20px;
+  margin-top: 6em;
 }
 
 .about-left {
   flex: 1;
+  max-width: 600px;
 }
 
 .about-left h2 {
