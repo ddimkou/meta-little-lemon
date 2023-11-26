@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import Specials from "./Specials";
 import Reviews from "./Reviews";
 import "./Home.css";
+import About from "./About";
 
 const Home = () => {
   return (
@@ -15,6 +16,9 @@ const Home = () => {
       </section>
       <section>
         <Reviews />
+      </section>
+      <section>
+        <About />
       </section>
     </main>
   );
