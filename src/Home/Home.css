@@ -65,11 +65,11 @@
 }
 
 /* Specials */
-/* Specials.css */
 
 .specials {
   background-color: #fbdabb;
-  padding: 2em 0;
+
+  padding-top: 12em;
 }
 
 .specials h2 {
@@ -79,7 +79,8 @@
 
 .specials-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2em;
   flex-wrap: wrap;
 }
 
@@ -120,10 +121,14 @@
 }
 
 /* Reviews */
-/* Add these styles to your CSS file */
+.reviews {
+  background-color: #fbdabb;
+  padding-top: 12em;
+}
 .reviews-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2em;
 }
 
 .review-card {
@@ -166,13 +171,17 @@
 }
 
 /* About */
+.about {
+  background-color: #fbdabb;
+  padding: 12em 0 6em;
+}
 
 .about-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2em;
   align-items: center;
   padding: 20px;
-  margin-top: 6em;
 }
 
 .about-left {

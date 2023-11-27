@@ -14,10 +14,10 @@ const Home = () => {
       <section className="specials">
         <Specials />
       </section>
-      <section>
+      <section className="reviews">
         <Reviews />
       </section>
-      <section>
+      <section className="about">
         <About />
       </section>
     </main>
