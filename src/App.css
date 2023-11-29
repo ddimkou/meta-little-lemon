@@ -1,3 +1,11 @@
+:root {
+  --darkteal: #264653;
+  --teal: #2a9d8f;
+  --yellow: #ffe91f;
+  --salmon: #ffbb84;
+  --terracotta: #fbdabb;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,10 +18,12 @@ body {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: #ee9972;
+  justify-content: space-around;
+
+  background-color: var(--salmon);
   padding: 15px;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -32,13 +42,14 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #495e57;
+  color: var(--darkteal);
+
   font-weight: bold;
   font-size: 16px;
   transition: color 0.2s ease-in-out;
 }
 nav a:hover {
-  color: #f4ce14;
+  color: var(--teal);
 }
 
 /* Main */
@@ -49,7 +60,7 @@ main {
 
 footer {
   padding: 3em 0 1em;
-  background-color: #495e57;
+  background-color: var(--darkteal);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,7 +107,7 @@ footer img {
 }
 
 .links a:hover {
-  color: #ffcc00;
+  color: var(--yellow);
 }
 
 /* MENU */
@@ -115,7 +126,7 @@ footer img {
 }
 
 .menu-heading {
-  color: #f4ce14;
+  color: blue;
   font-size: 2rem;
   margin-bottom: 20px;
 }

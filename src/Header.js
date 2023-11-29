@@ -1,16 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
-import Logo from "./assets/images/Logo .svg";
+import { Link } from "react-router-dom";
+import Logo from "./assets/images/Logo.svg";
 
 const Header = () => {
   return (
     <header>
       <Link to="/">
-        <img src={Logo} alt="Little Lemon logo" />
+        <img src={Logo} className="logo" alt="Little Lemon logo" />
       </Link>
       <nav>
         <ul>
-          {/* Use Link components for navigation */}
           <li>
             <Link to="/">Main</Link>
           </li>

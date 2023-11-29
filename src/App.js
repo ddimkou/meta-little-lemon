@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Home/Home";
-import Reserve from "./Reserve";
+import Reserve from "./Reserve/Reserve";
 import Footer from "./Footer";
 import Header from "./Header";
 import Menu from "./Menu";
