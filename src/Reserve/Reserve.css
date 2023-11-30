@@ -1,20 +1,24 @@
 .reserve {
   background-color: var(--terracotta);
+  padding-top: 2em;
 }
 
 .card {
   background-color: #fff;
-
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 20px;
   max-width: 400px;
   margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .reservation-form {
   display: flex;
   flex-direction: column;
+  max-width: 200px;
+  padding: 1em 0;
 }
 
 label {
@@ -43,4 +47,40 @@ button {
 
 button:hover {
   background-color: var(--teal);
+}
+
+/* Restaurant Infos */
+.restaurant-info h2 {
+  text-align: center;
+  margin-top: 1em;
+}
+.infos {
+  background-color: var(--terracotta);
+}
+
+.infos-container {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.info-card {
+  width: 300px;
+  margin: 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--salmon);
+  color: var(--darkteal);
+  text-align: center;
+}
+
+.info-card h3 {
+  margin-bottom: 10px;
+  color: var(--teal);
+}
+.info-card ul {
+  list-style-type: none;
+  padding: 0;
 }
