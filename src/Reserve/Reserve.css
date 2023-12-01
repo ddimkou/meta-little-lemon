@@ -4,14 +4,17 @@
 }
 
 .card {
-  background-color: var(--salmon);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--teal);
+
   border-radius: 8px;
   padding: 20px;
   max-width: 400px;
   margin: auto;
   display: flex;
   justify-content: center;
+  border: 1px solid var(--darkteal);
+  border-radius: 8px;
+  box-shadow: 0 0 8px var(--darkteal);
 }
 
 .reservation-form {
@@ -38,15 +41,18 @@ select,
 }
 
 button {
-  background-color: var(--darkteal);
+  background-color: var(--salmon);
+  border-radius: 8px;
   color: #fff;
   padding: 10px;
   border: none;
   cursor: pointer;
+  font-weight: bold;
 }
 
 button:hover {
-  background-color: var(--teal);
+  background-color: var(--yellow);
+  color: #000;
 }
 
 /* Restaurant Infos */
