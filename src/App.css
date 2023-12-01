@@ -1,8 +1,8 @@
 :root {
   --darkteal: #264653;
   --teal: #2a9d8f;
-  --yellow: #ffe91f;
-  --salmon: #ffbb84;
+  --yellow: #e9c46a;
+  --salmon: #e76f51;
   --terracotta: #fbdabb;
 }
 
@@ -21,6 +21,7 @@ header {
   justify-content: space-around;
 
   background-color: var(--salmon);
+  /* background-color: var(--teal); */
   padding: 15px;
 }
 
@@ -134,18 +135,18 @@ footer img {
 }
 
 .menu-heading {
-  color: var(--teal); /* Use your desired color variable or hex code */
+  color: var(--teal);
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 1em;
 }
 
 /* Section Styles */
 .menu-section {
-  margin-bottom: 30px;
+  margin-bottom: 7em;
 }
 
 .section-heading {
-  color: var(--darkteal); /* Use your desired color variable or hex code */
+  color: var(--darkteal);
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
@@ -159,5 +160,6 @@ footer img {
 
 .menu-item {
   margin-bottom: 8px;
-  color: var(--darkteal); /* Use your desired color variable or hex code */
+  letter-spacing: 0.5px;
+  color: var(--darkteal);
 }

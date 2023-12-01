@@ -1,6 +1,5 @@
 .hero {
-  padding: 15px;
-
+  padding-top: 4em;
   background-color: var(--darkteal);
   display: flex;
   align-items: center;
@@ -68,14 +67,15 @@
 /* Specials */
 
 .specials {
-  background-color: var(--terracotta);
-
+  background-color: var(--darkteal);
   padding-top: 12em;
 }
 
 .specials h2 {
   text-align: center;
-  color: var(--darkteal);
+  color: var(--yellow);
+  margin-bottom: 2em;
+  font-size: 30px;
 }
 
 .specials-container {
@@ -88,9 +88,10 @@
 .special-card {
   max-width: 300px;
   margin: 15px;
-  background-color: var(--salmon);
+  background-color: var(--teal);
+  border: 1px solid var(--salmon);
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 8px var(--salmon);
 }
 
 .special-card img {
@@ -107,7 +108,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--teal);
+  color: var(--yellow);
   font-weight: bold;
 }
 .special-card h3 {
@@ -116,16 +117,26 @@
 
 .special-card p.description {
   font-size: 1.1rem;
-  line-height: 1.4;
-  color: var(--darkteal);
+  line-height: 1.6;
+  color: #f2f2f2;
   margin: 3em 0;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+/* Reviews.css */
+
+.reviews {
+  background-color: var(--darkteal);
+  padding-top: 6em;
 }
 
-/* Reviews */
-.reviews {
-  background-color: var(--terracotta);
-  padding-top: 12em;
+.reviews h2 {
+  text-align: center;
+  color: var(--yellow);
+  margin-bottom: 2em;
+  font-size: 30px;
 }
+
 .reviews-container {
   display: flex;
   justify-content: center;
@@ -136,16 +147,15 @@
   width: 300px;
   margin: 15px;
   padding: 15px;
-  border: 1px solid #ddd;
+  background-color: var(--teal);
+  border: 1px solid var(--salmon);
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: var(--salmon);
-  color: var(--darkteal);
+  box-shadow: 0 0 8px var(--salmon);
 }
 
 .user-info h3 {
   margin-bottom: 10px;
-  color: var(--teal);
+  color: var(--yellow);
 }
 
 .review-content {
@@ -160,6 +170,9 @@
   height: 80px;
   border-radius: 50%;
   margin-right: 10px;
+  border: 0.5px solid var(--salmon);
+
+  box-shadow: 0 0 8px var(--salmon);
 }
 
 .score {
@@ -167,10 +180,20 @@
   color: var(--darkteal);
   width: 30px;
   height: 30px;
+  font-weight: bold;
   border-radius: 50%;
   text-align: center;
   line-height: 30px;
   font-size: 1rem;
+}
+.comment {
+  line-height: 1.6;
+  color: #f2f2f2;
+  letter-spacing: 0.3px;
+  padding: 1em 0;
+}
+.comment p {
+  padding-top: 1em;
 }
 
 /* About */

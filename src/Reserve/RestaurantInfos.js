@@ -28,8 +28,6 @@ const RestaurantInfos = () => {
             <li>Vegetarian Choices</li>
             <li>Gluten-Free Alternatives</li>
             <li>Dairy-Free Selections</li>
-            <li>Nut-Free Options</li>
-            <li>Low-Carb Alternatives</li>
           </ul>
         </div>
       </div>
