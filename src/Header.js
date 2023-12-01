@@ -19,9 +19,6 @@ const Header = () => {
           <li>
             <Link to="/reserve">Book a Table</Link>
           </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
         </ul>
       </nav>
     </header>

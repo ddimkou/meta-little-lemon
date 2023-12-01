@@ -12,7 +12,6 @@ const Footer = () => {
             <li>Main</li>
             <li>Menu</li>
             <li>Book a Table</li>
-            <li>About</li>
           </ul>
         </div>
         <div className="category">

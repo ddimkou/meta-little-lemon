@@ -51,6 +51,20 @@ nav a {
 nav a:hover {
   color: var(--teal);
 }
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: var(--darkteal);
+  margin: 6px 0;
+  transition: 0.4s;
+}
 
 /* Main */
 main {
@@ -67,7 +81,7 @@ footer {
 }
 
 footer img {
-  max-width: 600px;
+  max-width: 400px;
   margin-right: 20px;
   border-radius: 8px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
@@ -108,6 +122,16 @@ footer img {
 
 .links a:hover {
   color: var(--yellow);
+}
+@media only screen and (max-width: 768px) {
+  footer img {
+    display: none;
+  }
+  .footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+  }
 }
 
 /* MENU */

@@ -5,7 +5,6 @@
 
 .card {
   background-color: var(--teal);
-
   border-radius: 8px;
   padding: 20px;
   max-width: 400px;
@@ -53,6 +52,11 @@ button {
 button:hover {
   background-color: var(--yellow);
   color: #000;
+}
+@media only screen and (max-width: 768px) {
+  .card {
+    max-width: 250px;
+  }
 }
 
 /* Restaurant Infos */
