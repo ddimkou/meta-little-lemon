@@ -51,20 +51,45 @@ nav a {
 nav a:hover {
   color: var(--teal);
 }
+.hamburger {
+  display: none;
+}
 @media only screen and (max-width: 600px) {
   .logo {
     width: 100px;
     height: auto;
   }
+
+  header {
+    justify-content: space-between;
+  }
+  .hamburger {
+    display: block;
+    padding-right: 1em;
+  }
+  header nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--salmon);
+    width: 100%;
+    text-align: center;
+  }
+  header nav.menu-visible {
+    display: flex;
+  }
 }
 
-.bar {
+/* .bar {
   width: 30px;
   height: 3px;
   background-color: var(--darkteal);
   margin: 6px 0;
   transition: 0.4s;
-}
+} */
 
 /* Main */
 main {
