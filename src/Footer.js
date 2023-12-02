@@ -1,7 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import restaurant from "./assets/images/restaurant.jpg";
 
 const Footer = () => {
+  const scrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <footer>
       <img src={restaurant} alt="restaurant" />
@@ -9,9 +16,21 @@ const Footer = () => {
         <div className="category">
           <ul className="links">
             <h3>Links</h3>
-            <li>Main</li>
-            <li>Menu</li>
-            <li>Book a Table</li>
+            <li>
+              <Link to="/" onClick={scrollTop}>
+                Main
+              </Link>
+            </li>
+            <li>
+              <Link to="/menu" onClick={scrollTop}>
+                Menu
+              </Link>
+            </li>
+            <li>
+              <Link to="/reserve" onClick={scrollTop}>
+                Book a Table
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="category">
@@ -24,8 +43,16 @@ const Footer = () => {
         <div className="category">
           <ul className="social">
             <h3>Social Media</h3>
-            <li>Instagram</li>
-            <li>Facebook</li>
+            <li>
+              <a href="https://instagram.com" target="_blank" rel="noreferrer">
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com" target="_blank" rel="noreferrer">
+                Facebook
+              </a>
+            </li>
           </ul>
         </div>
       </div>

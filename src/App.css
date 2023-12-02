@@ -144,18 +144,36 @@ footer img {
   color: #fff;
   transition: color 0.3s ease-in-out;
 }
-
-.links a:hover {
-  color: var(--yellow);
+.footer-info .social a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
 }
+
 @media only screen and (max-width: 768px) {
+  footer {
+    padding: 0 0 1em;
+  }
   footer img {
     display: none;
   }
   .footer-info {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     margin-left: 0;
+    justify-content: center;
+    text-align: center;
+  }
+  .links,
+  .contact-info,
+  .social {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    margin-right: 0;
+  }
+  .category h3 {
+    margin-top: 3em;
   }
 }
 
