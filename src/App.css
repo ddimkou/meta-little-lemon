@@ -99,10 +99,11 @@ main {
 
 footer {
   padding: 3em 0 1em;
-  background-color: var(--darkteal);
+  background-color: var(--terracotta);
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top: 2px solid var(--salmon);
 }
 
 footer img {
@@ -124,7 +125,8 @@ footer img {
   list-style: none;
   padding: 0 30px;
   margin: 0;
-  color: #fff;
+  color: var(--teal);
+  font-weight: bold;
   margin-right: 20px;
 }
 
@@ -134,19 +136,21 @@ footer img {
 
 .footer-info h3 {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.2em;
   padding-bottom: 15px;
-  color: #f4ce14;
+  color: var(--darkteal);
 }
 
 .links a {
   text-decoration: none;
-  color: #fff;
+  color: var(--teal);
+  font-weight: bold;
   transition: color 0.3s ease-in-out;
 }
 .footer-info .social a {
   text-decoration: none;
-  color: #fff;
+  color: var(--teal);
+  font-weight: bold;
   transition: color 0.3s ease-in-out;
 }
 
@@ -169,7 +173,6 @@ footer img {
   .social {
     padding: 0;
     margin: 0;
-    color: #fff;
     margin-right: 0;
   }
   .category h3 {
@@ -180,7 +183,7 @@ footer img {
 /* MENU */
 
 .menu {
-  background-color: var(--terracotta);
+  background-color: var(--darkteal);
 }
 .menu h2 {
   text-align: center;
@@ -201,7 +204,7 @@ footer img {
 }
 
 .menu-heading {
-  color: var(--teal);
+  color: var(--yellow);
   font-size: 2rem;
   margin-bottom: 1em;
 }
@@ -214,6 +217,9 @@ footer img {
 /* Section Styles */
 .menu-section {
   margin-bottom: 7em;
+}
+.menu-section h3 {
+  color: var(--salmon);
 }
 
 .section-heading {
@@ -232,5 +238,5 @@ footer img {
 .menu-item {
   margin-bottom: 8px;
   letter-spacing: 0.5px;
-  color: var(--darkteal);
+  color: #f2f2f2;
 }

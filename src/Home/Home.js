@@ -11,14 +11,14 @@ const Home = () => {
       <section className="hero">
         <Hero />
       </section>
+      <section className="about" id="about">
+        <About />
+      </section>
       <section className="specials">
         <Specials />
       </section>
       <section className="reviews">
         <Reviews />
-      </section>
-      <section className="about" id="about">
-        <About />
       </section>
     </main>
   );

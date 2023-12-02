@@ -1,19 +1,19 @@
 .reserve {
-  background-color: var(--terracotta);
+  background-color: var(--darkteal);
   padding-top: 2em;
 }
 
 .card {
-  background-color: var(--teal);
+  background-color: var(--terracotta);
   border-radius: 8px;
   padding: 20px;
   max-width: 400px;
   margin: auto;
   display: flex;
   justify-content: center;
-  border: 1px solid var(--darkteal);
+  border: 1px solid var(--salmon);
   border-radius: 8px;
-  box-shadow: 0 0 8px var(--darkteal);
+  box-shadow: 0 0 8px var(--salmon);
 }
 
 .reservation-form {
@@ -91,9 +91,9 @@ button:hover {
   letter-spacing: 0.3px;
   text-align: center;
   background-color: var(--teal);
-  border: 1px solid var(--darkteal);
+  border: 1px solid var(--salmon);
   border-radius: 8px;
-  box-shadow: 0 0 8px var(--darkteal);
+  box-shadow: 0 0 8px var(--salmon);
 }
 
 .info-card h3 {
