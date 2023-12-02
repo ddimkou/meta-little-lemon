@@ -187,6 +187,11 @@ footer img {
   font-size: 2rem;
   margin-bottom: 1em;
 }
+@media only screen and (max-width: 768px) {
+  .menu-container {
+    display: block;
+  }
+}
 
 /* Section Styles */
 .menu-section {
