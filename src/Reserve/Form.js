@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-const Form = () => {
+const Form = ({ availableTimes }) => {
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedPeople, setSelectedPeople] = useState("");
   const [selectedTime, setSelectedTime] = useState("");
@@ -68,12 +68,11 @@ const Form = () => {
           <option value="" disabled>
             Hour
           </option>
-          <option value="18:00">18:00</option>
-          <option value="19:00">19:00</option>
-          <option value="20:00">20:00</option>
-          <option value="21:00">21:00</option>
-          <option value="22:00">22:00</option>
-          <option value="23:00">23:00</option>
+          {availableTimes.map((timeOption) => (
+            <option key={timeOption} value={timeOption}>
+              {timeOption}
+            </option>
+          ))}
         </select>
 
         <select

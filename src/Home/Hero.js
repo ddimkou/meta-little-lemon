@@ -1,5 +1,6 @@
 import React from "react";
 import restaurantFood from "../assets/images/restauranfood.jpg";
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <>
@@ -11,7 +12,9 @@ const Hero = () => {
           Ingredients!
         </p>
         <div className="button">
-          <button>Book a Table</button>
+          <Link to="/reserve">
+            <button>Book a Table</button>
+          </Link>
         </div>
       </div>
       <div className="right-side">
