@@ -3,10 +3,10 @@ import Map from "./Map";
 import "./Reserve.css";
 import RestaurantInfos from "./RestaurantInfos";
 
-const Reserve = ({ availableTimes }) => {
+const Reserve = ({ availableTimes, dispatch }) => {
   return (
     <main className="reserve">
-      <Form availableTimes={availableTimes} />
+      <Form availableTimes={availableTimes} dispatch={dispatch} />
       <Map />
 
       <RestaurantInfos />

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-const Form = ({ availableTimes }) => {
+const Form = ({ availableTimes, dispatch }) => {
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedPeople, setSelectedPeople] = useState("");
   const [selectedTime, setSelectedTime] = useState("");
@@ -10,6 +10,7 @@ const Form = ({ availableTimes }) => {
 
   const handleDateChange = (date) => {
     setSelectedDate(date);
+    dispatch({ type: "UPDATE_AVAILABLE_TIMES", payload: date });
   };
 
   // Submit
@@ -27,8 +28,14 @@ const Form = ({ availableTimes }) => {
       return;
     }
 
+    // Format date "dd/MM/yyyy"
+    const formattedDate = selectedDate.toLocaleDateString("en-GB", {
+      day: "numeric",
+      month: "numeric",
+      year: "numeric",
+    });
     // Validation Success
-    const reservationInfo = `\nYour reservation completed!\n\nPeople: ${selectedPeople}\nDate: ${selectedDate.toLocaleDateString()}\nHour: ${selectedTime}\nOccasion: ${selectedOccasion}.\n\nFor changes, please contact us on 21 0999 9999`;
+    const reservationInfo = `\nYour reservation completed!\n\nPeople: ${selectedPeople}\nDate: ${formattedDate}\nHour: ${selectedTime}\nOccasion: ${selectedOccasion}.\n\nFor changes, please contact us on 21 0999 9999`;
     window.alert(reservationInfo);
   };
 
