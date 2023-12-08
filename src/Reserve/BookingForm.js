@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-const BookingForm = ({ availableTimes, dispatch }) => {
+const BookingForm = ({ availableTimes, dispatch, updateTimes }) => {
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedPeople, setSelectedPeople] = useState("");
   const [selectedTime, setSelectedTime] = useState("");
@@ -67,7 +67,7 @@ const BookingForm = ({ availableTimes, dispatch }) => {
           required
         />
 
-        <select
+        {/* <select
           value={selectedTime}
           onChange={(e) => setSelectedTime(e.target.value)}
           required
@@ -80,8 +80,27 @@ const BookingForm = ({ availableTimes, dispatch }) => {
               {timeOption}
             </option>
           ))}
+        </select> */}
+        <select
+          value={selectedTime}
+          onChange={(e) => setSelectedTime(e.target.value)}
+          required
+        >
+          <option value="" disabled>
+            Hour
+          </option>
+          {Array.isArray(availableTimes) ? (
+            availableTimes.map((timeOption) => (
+              <option key={timeOption} value={timeOption}>
+                {timeOption}
+              </option>
+            ))
+          ) : (
+            <option value="" disabled>
+              No available times
+            </option>
+          )}
         </select>
-
         <select
           value={selectedOccasion}
           onChange={(e) => setSelectedOccasion(e.target.value)}

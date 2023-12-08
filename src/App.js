@@ -20,7 +20,9 @@ const timesReducer = (state, action) => {
 const generateAvailableTimes = (selectedDate) => {
   return ["18:00", "19:00", "20:00", "21:00", "22:00", "23:00"];
 };
-
+const updateTimes = (selectedDate) => {
+  return generateAvailableTimes(selectedDate);
+};
 const initializeTimes = () => {
   return { availableTimes: generateAvailableTimes() };
 };
@@ -39,6 +41,7 @@ function App() {
               <BookingPage
                 availableTimes={state.availableTimes}
                 dispatch={dispatch}
+                updateTimes={updateTimes}
               />
             }
           />
