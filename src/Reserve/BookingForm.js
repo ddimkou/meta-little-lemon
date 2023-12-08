@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-const Form = ({ availableTimes, dispatch }) => {
+const BookingForm = ({ availableTimes, dispatch }) => {
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedPeople, setSelectedPeople] = useState("");
   const [selectedTime, setSelectedTime] = useState("");
@@ -102,4 +102,4 @@ const Form = ({ availableTimes, dispatch }) => {
   );
 };
 
-export default Form;
+export default BookingForm;

@@ -1,12 +1,12 @@
-import Form from "./Form";
+import BookingForm from "./BookingForm";
 import Map from "./Map";
 import "./Reserve.css";
 import RestaurantInfos from "./RestaurantInfos";
 
-const Reserve = ({ availableTimes, dispatch }) => {
+const BookingPage = ({ availableTimes, dispatch }) => {
   return (
     <main className="reserve">
-      <Form availableTimes={availableTimes} dispatch={dispatch} />
+      <BookingForm availableTimes={availableTimes} dispatch={dispatch} />
       <Map />
 
       <RestaurantInfos />
@@ -14,4 +14,4 @@ const Reserve = ({ availableTimes, dispatch }) => {
   );
 };
 
-export default Reserve;
+export default BookingPage;
