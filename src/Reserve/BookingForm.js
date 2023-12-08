@@ -67,20 +67,6 @@ const BookingForm = ({ availableTimes, dispatch, updateTimes }) => {
           required
         />
 
-        {/* <select
-          value={selectedTime}
-          onChange={(e) => setSelectedTime(e.target.value)}
-          required
-        >
-          <option value="" disabled>
-            Hour
-          </option>
-          {availableTimes.map((timeOption) => (
-            <option key={timeOption} value={timeOption}>
-              {timeOption}
-            </option>
-          ))}
-        </select> */}
         <select
           value={selectedTime}
           onChange={(e) => setSelectedTime(e.target.value)}
