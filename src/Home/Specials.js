@@ -7,7 +7,7 @@ const Specials = () => {
     <>
       <h2>Specials</h2>
       <div className="specials-container">
-        <div className="special-card">
+        <div className="special-card border-templ">
           <img src={greekSalad} alt="Greek Salad" />
           <div className="card-info">
             <div className="top">
@@ -36,7 +36,7 @@ const Specials = () => {
           </div>
         </div>
 
-        <div className="special-card">
+        <div className="special-card border-templ">
           <img src={bruschetta} alt="Bruschetta" />
           <div className="card-info">
             <div className="top">
