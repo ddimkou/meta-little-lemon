@@ -22,7 +22,7 @@ const Specials = () => {
           </div>
         </div>
 
-        <div className="special-card">
+        <div className="special-card border-templ">
           <img src={lemonDessert} alt="Lemon Dessert" />
           <div className="card-info">
             <div className="top">

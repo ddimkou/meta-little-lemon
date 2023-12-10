@@ -46,13 +46,8 @@
 
 .hero .right-side {
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
   transition: box-shadow 0.3s ease;
   margin-left: 6em;
-  border: 1px solid var(--salmon);
-  border-radius: 8px;
-  box-shadow: 0 0 8px var(--salmon);
 }
 
 .hero .right-side img {
@@ -107,9 +102,6 @@
   max-width: 300px;
   margin: 15px;
   background-color: var(--teal);
-  border: 1px solid var(--salmon);
-  border-radius: 8px;
-  box-shadow: 0 0 8px var(--salmon);
 }
 
 .special-card img {
@@ -168,9 +160,6 @@
   margin: 15px;
   padding: 15px;
   background-color: var(--teal);
-  border: 1px solid var(--salmon);
-  border-radius: 8px;
-  box-shadow: 0 0 8px var(--salmon);
 }
 
 .user-info h3 {
@@ -191,7 +180,6 @@
   border-radius: 50%;
   margin-right: 10px;
   border: 0.5px solid var(--salmon);
-
   box-shadow: 0 0 8px var(--salmon);
 }
 
@@ -262,9 +250,6 @@
   right: 0;
   border-radius: 4px;
   box-shadow: 0 40px 40px rgba(0, 0, 0, 0.3);
-  border: 1px solid var(--salmon);
-  border-radius: 8px;
-  box-shadow: 0 0 8px var(--salmon);
 }
 
 .pasta1 {
@@ -273,9 +258,6 @@
   margin-top: 20px;
   z-index: -1;
   border-radius: 8px;
-  border: 1px solid var(--salmon);
-  border-radius: 8px;
-  box-shadow: 0 0 8px var(--salmon);
 }
 @media only screen and (max-width: 768px) {
   .about-container {

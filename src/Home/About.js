@@ -20,8 +20,16 @@ const About = () => {
         </p>
       </div>
       <div className="about-right">
-        <img src={pasta1} alt="Little Lemon Logo" className="pasta1" />
-        <img src={pasta2} alt="Restaurant Interior" className="pasta2" />
+        <img
+          src={pasta1}
+          alt="Little Lemon Logo"
+          className="pasta1 border-templ"
+        />
+        <img
+          src={pasta2}
+          alt="Restaurant Interior"
+          className="pasta2 border-templ"
+        />
       </div>
     </div>
   );

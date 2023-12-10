@@ -11,9 +11,6 @@
   margin: auto;
   display: flex;
   justify-content: center;
-  border: 1px solid var(--salmon);
-  border-radius: 8px;
-  box-shadow: 0 0 8px var(--salmon);
 }
 
 .reservation-form {

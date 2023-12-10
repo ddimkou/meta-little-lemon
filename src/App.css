@@ -11,10 +11,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+.border-templ {
+  border-radius: 8px;
+  box-shadow: 0 0 8px var(--salmon);
+  border: 1px solid var(--salmon);
+}
 
 body {
   font-family: "Roboto", sans-serif;
 }
+
 /* Header */
 header {
   display: flex;
@@ -83,14 +89,6 @@ nav a:hover {
   }
 }
 
-/* .bar {
-  width: 30px;
-  height: 3px;
-  background-color: var(--darkteal);
-  margin: 6px 0;
-  transition: 0.4s;
-} */
-
 /* Main */
 main {
   min-height: 70vh;
@@ -141,15 +139,10 @@ footer img {
   color: var(--darkteal);
 }
 
-.links a {
-  text-decoration: none;
-  color: var(--teal);
-  font-weight: bold;
-  transition: color 0.3s ease-in-out;
-}
+.links a,
 .footer-info .social a {
   text-decoration: none;
-  color: var(--teal);
+  color: var(--secondary);
   font-weight: bold;
   transition: color 0.3s ease-in-out;
 }
@@ -239,5 +232,3 @@ footer img {
   letter-spacing: 0.5px;
   color: #f2f2f2;
 }
-
-/* test */

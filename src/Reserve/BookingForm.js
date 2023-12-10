@@ -40,7 +40,7 @@ const BookingForm = ({ availableTimes, dispatch, updateTimes }) => {
   };
 
   return (
-    <div className="card">
+    <div className="card border-templ">
       <form className="reservation-form" onSubmit={handleSubmit}>
         <select
           value={selectedPeople}

@@ -17,7 +17,7 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="right-side">
+      <div className="right-side border-templ">
         <img src={restaurantFood} alt="bruscetta plate" />
       </div>
     </>

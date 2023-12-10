@@ -26,7 +26,7 @@ const Reviews = () => {
           </div>
         </div>
 
-        <div className="review-card">
+        <div className="review-card border-templ">
           <div className="user-info">
             <h3>James</h3>
           </div>
