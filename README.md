@@ -8,14 +8,13 @@ This Figma project is created for the purpose of practicing wireframing, compone
 
 ## Figma Link
 
-[Little Lemon Figma Project](https://www.figma.com/file/b89wnibXY1bGAkfay3kfuu/canvas?type=design&node-id=0%3A1&mode=design&t=wz71lxwWoZrdB12u-1)
+[Little Lemon Figma Project](https://www.figma.com/file/3fnMNlS6qqM7n18f6YS1JM/little-lemon-wireframe?type=design&node-id=0%3A1&mode=design&t=LxOgeR0ed4o81U3S-1)
 
-## Description
+## Exercise 2: Semantic structure & Styling responsiveness
 
-This project focuses on developing wireframes and components while exploring design fundamentals. Feel free to explore the Figma file using the provided link.
+- Meta tags and Open Graph protocol for enhanced SEO and social sharing.
+- Responsive layout across mobile, tablet, and laptop devices.
 
-## Instructions
+## Exercise 3: Booking page & Form validation
 
-1. Open the Figma link to access the project.
-2. Explore the wireframes and components created for Exercise 1.
-3. ...
+- Client-side validation
